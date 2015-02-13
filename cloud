@@ -1,0 +1,9 @@
+#cloud-config
+coreos:
+    etcd:
+        name: $ip$
+        discovery: https://discovery.etcd.io/6b7cd52c07d131df6f7e57d8f8c12e7d
+        addr: $ip$:4001
+        peer-addr: $ip$:7001
+ssh_authorized_keys:
+    - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCm1s/7F0slQDDJw6l3RpQUc6cmBR2l0lRrJgFpbsThThqwINdE6lCLaSUoqtlfk81t8K0k2DquYAaKpuO1OHPwjCn3wntX3+1qAtXVymMzWK9rc/j4h/DRnXUszdveGsYc1owbbYbeZp3dvQF+UE2qai1bNn42k3jd+ullOt3C6gke///WMTk/ie8egfHPdUlRYj5Vgj6t25o257M+mls/iw13SMOHqvxOvVnH9bqmuBfcNXH3E+TQRIqrslHZ53tVCs6H8SHU3mTeUzbAAvYhjj/pTjwkXuYsncTX4/2PQS2zAYw9Ex2Np4qLykSyezysZelf/bmvUk65F2gyECPT
